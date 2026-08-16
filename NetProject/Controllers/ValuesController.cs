@@ -16,7 +16,7 @@ public class AuthController : ControllerBase
     private readonly tokenService _tokenService;
     private readonly IConfiguration _config;
 
-    private readonly DbContext _dbContext;
+    private readonly AppDbContext _dbContext;
     public AuthController(tokenService tokenService, IConfiguration config)
     {
         _tokenService = tokenService;
@@ -48,7 +48,6 @@ public class AuthController : ControllerBase
             var user = await _dbContext.Users
              .FirstOrDefaultAsync(u => u.GoogleSubjectId == googleUserId);
 
-         // 3. If user doesn't exist, register them
          if (user == null)
          {
              user = new User

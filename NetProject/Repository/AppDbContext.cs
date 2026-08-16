@@ -14,12 +14,11 @@ namespace NetProject.Repository
         {
             base.OnModelCreating(modelBuilder);
 
-            // Ensure email is unique across the app
             modelBuilder.Entity<User>()
                 .HasIndex(u => u.Email)
                 .IsUnique();
 
-            // Index GoogleSubjectId for fast lookups
+           
             modelBuilder.Entity<User>()
                 .HasIndex(u => u.GoogleSubjectId);
         }
