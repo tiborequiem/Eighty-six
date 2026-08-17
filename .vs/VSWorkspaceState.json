@@ -3,10 +3,9 @@
     "",
     "\\NetProject",
     "\\NetProject\\Controllers",
-    "\\NetProject\\Models",
     "\\NetProject\\Repository",
     "\\NetProject\\Services"
   ],
-  "SelectedNode": "\\NetProject\\Program.cs",
+  "SelectedNode": "\\NetProject\\Models",
   "PreviewInSolutionExplorer": false
 }
