@@ -2,10 +2,11 @@
   "ExpandedNodes": [
     "",
     "\\NetProject",
+    "\\NetProject\\Controllers",
     "\\NetProject\\Models",
     "\\NetProject\\Repository",
     "\\NetProject\\Services"
   ],
-  "SelectedNode": "\\NetProject\\appsettings.json",
+  "SelectedNode": "\\NetProject\\Program.cs",
   "PreviewInSolutionExplorer": false
 }

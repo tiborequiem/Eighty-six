@@ -4,7 +4,9 @@
     {
 
         public Guid id { get; set; } = Guid.NewGuid();
+
         public String Email { get; set; } = String.Empty;
+
         public string? GoogleSubjectId { get; set; }
 
         public string? PasswordHash { get; set; }

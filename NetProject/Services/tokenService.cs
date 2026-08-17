@@ -23,7 +23,7 @@ namespace NetProject.Services
             var secretKey = jwtSettings["Secret"];
             var issuer = jwtSettings["issuer"];
             var audience = jwtSettings["AuthServiceUsers"];
-            var expiryMinutes = double.Parse(jwtSettings["ExpireyInMinutes"]!);  
+            var expiryMinutes = double.Parse(jwtSettings["ExpiryInMinutes"]!);  
             
             var key = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(secretKey));
             var creds = new SigningCredentials(key,SecurityAlgorithms.HmacSha256);
