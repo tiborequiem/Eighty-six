@@ -1,5 +1,5 @@
 # Eighty-six
-![image_alt](https://github.com/tiborequiem/Eighty-six/blob/bd0b073118a60f4c5f7d0758df24afb9ffc18fef/pngs/1140591.jpg)
+![image_alt](https://github.com/tiborequiem/Eighty-six/blob/769e206ffd7ee796ecbb5b5383c07d87198ede63/pngs/png.png)
 A full-stack authentication foundation built with **ASP.NET Core** and **React**. Phase 1 delivers Google OAuth sign-in on the frontend, server-side token verification, user persistence in SQL Server, and issuance of application JWTs for protected API access.
 
 > **Status:** Phase 1 complete — JWT + Google OAuth
