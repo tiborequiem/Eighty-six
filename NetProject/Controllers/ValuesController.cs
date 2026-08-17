@@ -15,16 +15,24 @@ public class AuthController : ControllerBase
 {
     private readonly tokenService _tokenService;
     private readonly IConfiguration _config;
-
     private readonly AppDbContext _dbContext;
-    public AuthController(tokenService tokenService, IConfiguration config)
+
+
+    public AuthController(tokenService tokenService, IConfiguration config,AppDbContext dbContext)
     {
         _tokenService = tokenService;
         _config = config;
+        _dbContext = dbContext;
+    }
+
+    [HttpGet("test")]
+    public IActionResult testEndpoint()
+    {
+        return Ok(new { message = " Server is running and up " });
     }
 
 
-    
+
 
     [HttpPost("google")] // Maps to POST /api/auth/google
     public async Task<IActionResult> GoogleAuth([FromBody] GoogleAuthDto dto)
