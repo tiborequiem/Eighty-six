@@ -1,0 +1,8 @@
+# Force GitHub Linguist to analyze TypeScript and React files
+frontend/**/*.ts linguist-detectable=true
+frontend/**/*.tsx linguist-detectable=true
+frontend/**/*.js linguist-detectable=true
+frontend/**/*.jsx linguist-detectable=true
+
+# Ensure the frontend directory is not treated as vendored code
+frontend/** linguist-vendored=false
